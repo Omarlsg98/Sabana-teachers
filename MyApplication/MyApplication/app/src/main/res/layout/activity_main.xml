@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.edu.unisabana.myapplication.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/etDato1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="dato1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etDato2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="dato2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etDato3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="dato3"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnInsertV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert Voto" />
+
+    <Button
+        android:id="@+id/btnInsertE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invert Desc" />
+
+    <Button
+        android:id="@+id/btnSelectE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Edificios" />
+
+    <TextView
+        android:id="@+id/txtTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:text="TextView" />
+
+</LinearLayout>

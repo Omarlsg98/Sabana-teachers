@@ -1,0 +1,30 @@
+    static public void insertInconsistencia(final Context t, String Inconsistencia, String idClase){
+        HashMap postData = new HashMap();
+        postData.put("mobile", "android");
+        postData.put("txtInconsistencia", Inconsistencia);
+        postData.put("txtClase_idClase", idClase);
+        PostResponseAsyncTask loginTask =
+                new PostResponseAsyncTask(t, postData, new AsyncResponse() {
+                    @Override
+                    public void processFinish(String s) {
+                    }
+                });
+        loginTask.execute("http://10.0.2.2/APPSabana/insert.php");
+    }
+
+        static public void selectHora (final Context t, AsyncResponse tar) {
+        HashMap postData = new HashMap();
+        postData.put("select", "hora");
+        postData.put("dato1", Integer.toString(1));
+        PostResponseAsyncTask taskRead = new PostResponseAsyncTask(t, postData, tar);
+        taskRead.execute("http://10.0.2.2/appsabana/single.php");
+    }
+
+        static public void getHora (final Context t, int idedificio) {
+        Select.selectHora(t, new AsyncResponse() {
+            @Override
+            public void processFinish(String s) {
+                // s es la hora
+            }
+        });
+    }
